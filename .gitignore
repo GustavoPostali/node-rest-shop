@@ -1,1 +1,10 @@
+#Arquivo que contém a senha para acesso à base de dados
+
+#O arquivo contém o seguinte
+#{
+#    "env" : {
+#        "MONGO_ATLAS_PASSWORD" : "<PASSWORD>"
+#    }
+#}
+
 nodemon.json
