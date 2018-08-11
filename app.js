@@ -12,6 +12,7 @@ const orderRoutes = require('./api/routes/orders');
 mongoose.connect('mongodb://GustavoPostaliAdmin:' + process.env.MONGO_ATLAS_PASSWORD + '@node-rest-shop-shard-00-00-ugxqj.mongodb.net:27017,node-rest-shop-shard-00-01-ugxqj.mongodb.net:27017,node-rest-shop-shard-00-02-ugxqj.mongodb.net:27017/test?ssl=true&replicaSet=node-rest-shop-shard-0&authSource=admin&retryWrites=true', { useNewUrlParser : true });
 
 app.use(morgan('dev'));
+app.use('/uploads/', express.static('uploads'));
 app.use(bodyParser.urlencoded( {extended : false} ));
 app.use(bodyParser.json());
 
