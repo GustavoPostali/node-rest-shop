@@ -11,4 +11,5 @@ nodemon.json
 
 #Pasta com os uploads das imagens dos produtos
 
-uploads/
+uploads/*.jpeg
+uploads/*.png
