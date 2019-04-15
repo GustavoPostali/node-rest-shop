@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const mongoose = require('mongoose');
-const bcrypt = require('bcryptjs');
+const bcryptjs = require('bcryptjs');
 
 const User = require('../models/user');
 
@@ -15,7 +15,7 @@ router.post('/signup', (req,res,next) => {
                     message : 'Email already exists'
                 })
             }else {
-                bcrypt.hash(req.body.password, 10, (err,hash) => {
+                bcryptjs.hash(req.body.password, 10, (err,hash) => {
                     if(err){
                         return res.status(500).json({
                             error : err
