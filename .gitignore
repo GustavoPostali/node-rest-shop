@@ -13,3 +13,4 @@ nodemon.json
 
 uploads/*.jpeg
 uploads/*.png
+uploads/*.jpg
