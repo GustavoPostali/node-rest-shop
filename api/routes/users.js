@@ -90,7 +90,7 @@ router.post('/login', (req,res,next) => {
         });
 });
 
-/*router.get('/', (req,res,next) => {
+router.get('/', (req,res,next) => {
     User.find()
         .exec()
         .then(docs => {
@@ -113,7 +113,7 @@ router.post('/login', (req,res,next) => {
                 error : err
             });
         });
-});*/
+});
 
 router.delete('/:userId', (req,res,next) => {
     User.remove({ 
